@@ -10,7 +10,7 @@ app.use(express.static("public"));
  app.use(cookieParser());
 app.set("view engine", "ejs");
 const uri =
-  "mongodb+srv://bloguser:test1234@atlascluster.tdejwh4.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@atlascluster.tdejwh4.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
   .connect(uri)
